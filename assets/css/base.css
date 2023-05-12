@@ -1,0 +1,93 @@
+* {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('fonts/sofiapro.otf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Stangith';
+    src: url('fonts/stangith.ttf') format('truetype');
+  }
+@font-face{
+    font-family: 'Sriracha';
+    src: url('../fonts/Sriracha-Regular.ttf') format('truetype');
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Sofia Pro', sans-serif;
+    box-sizing: border-box;
+    line-height: 3.3rem;
+}
+
+h1,h2,h3{
+    font-family: 'Stangith', sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-size: 10rem;
+}
+h2{
+    font-size: 6rem;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+        color: black;
+        background: linear-gradient(to left, #F9D6A6 0%, #F387C1 100%);
+
+}
+.gird{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+}
+.grid__column-5{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+@keyframes Up{
+    from{
+        top: 0;
+    }
+    to{
+        top: -20px;
+    }
+}
+
+@keyframes Down{
+    from{
+        top: -20px;
+    }
+    to{
+        top: 0px;
+    }
+}
