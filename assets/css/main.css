@@ -3,8 +3,8 @@
     padding: 0 78px;
 }
 .main{
-    height: 1000px;
     border-bottom: 2px solid black;
+    padding-bottom: 50px;
 }
 
 /* Header */
@@ -76,6 +76,7 @@
 .navbar_user-bag{
     height: 30px;
     margin-right: 55px;
+    
 }
 .navbar_user-profile{
     height: 30px;
@@ -137,11 +138,12 @@
 /* Event */
 
 .event{
-    height: 683px;
     border-bottom: 2px solid black;
     text-align: center;
     display: flex;
     align-items: center;
+    padding: 50px 0;
+    
     
 }
 
@@ -211,6 +213,7 @@
 }
 .product_choose{
     background-color: white;
+    border-radius: 15px;
     
 }
 .product__img{
@@ -239,7 +242,9 @@
 .info__quality input{
     position: relative;
     display: inline-block;
-    
+}
+.info__quality{
+    display: flex;
 }
 .buttons{
     width: 2.2rem;
@@ -249,7 +254,7 @@
     border: 1px solid black;
     font-size: 1.3rem;
     outline: none;
-
+    text-align: center;
     
 }
 input[type=number]::-webkit-inner-spin-button, 
@@ -293,7 +298,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 117px;
     z-index: 1;
 
-    
+
 }
 
 .menu__wrapper{
@@ -305,7 +310,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: 52px;
     left: 30px;
     height: 100%;
-    width: 1270px;
+    width:  95%;
     background: linear-gradient(to left, #FFEBCF 0%, #FF96CF 100%);
     z-index: 0;
     filter: blur(20px);
@@ -344,6 +349,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .menu_sale{
     display: flex;
+    width: 50%;
     
 }
 
@@ -441,13 +447,11 @@ input[type=number]::-webkit-outer-spin-button {
 /* Footer */
 
 .footer{
-    height: 354px;
     background-color: black;
     color: white;
 }
 .footer__wrapper{
-    margin: 0 64px 81px 75px;
-    padding-top: 54px;
+    padding: 54px 64px 0px 75px;
 }
 .footer__logo{
    
@@ -474,8 +478,10 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: underline;
 }
 .footer__contact-items{
-list-style: none    ;
+    list-style: none;
+    
 }
+
 
 .contact__logo{
     width: 42px;
