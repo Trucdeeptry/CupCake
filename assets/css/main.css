@@ -52,20 +52,20 @@
     display: flex;
     padding-top: 25px;
     align-items: center;
+    justify-content: space-between;
 }
 .navbar_logo{
     height: 90px;
-    margin-right: 262px;
+
 }
 .navbar_center-text{
     display: flex;
-    margin-right: 235px;
 }
 .navbar_center-list{
     list-style: none;
     margin-right: 58px;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .navbar_center-link:hover{
     background: linear-gradient(to left, #F9D6A6 0%, #F387C1 100%);
@@ -75,11 +75,12 @@
 }
 .navbar_user-bag{
     height: 30px;
-    margin-right: 55px;
+  
     
 }
 .navbar_user-profile{
     height: 30px;
+    margin-left: 55px;
 }
 
 /* main content */
@@ -93,19 +94,30 @@
 .heading_text{
     font-size: 10rem;
     font-weight: 300;
+    display: inline-block;
+}
+.content_heading{
+    display: inline-block;
 }
 .heading_text-cupcake{
     background: linear-gradient(to left, #F9D6A6 0%, #F387C1 100%);
 	background-clip: text;
 	color: transparent;
     -webkit-background-clip: text;
+    line-height: 10rem;
+    display: inline-block;
+    margin-left: 14px;
 }
+    
 .content_sub{
-    font-size: 2.5rem;
+    font-size: 2.5rem;  
 }
 
 .content_img{
-    margin-top: 4.5rem;
+   width: 40%;
+   
+    float: right;
+    margin: auto 0;
 }
 .content_order{
     display: flex;
@@ -113,8 +125,7 @@
     align-items: center;
 }
 .order_button{
-    height: 6.4rem;
-    width: 23.6rem;
+    padding: 16px 55px;
 }
 .order_button:hover{
     background-color: #a3a3a3;
@@ -143,8 +154,7 @@
     display: flex;
     align-items: center;
     padding: 50px 0;
-    
-    
+    justify-content: space-around;
 }
 
 .grid__row-event{
@@ -160,14 +170,15 @@
 .event__product{
    margin: 0 2rem;
 }
+.event__item-img{
+    width: 100%;
+}
 .event__item{
     position: relative;
     background-color: white;
-    width: 260px;
+
     padding: 5px;
     animation: Down 0.5s;
-
-
 }
 
 .event__item:hover{
@@ -208,8 +219,6 @@
 }
 .menu__product{
     margin-top: 6rem;
-    
-    height: 498px;  
 }
 .product_choose{
     background-color: white;
@@ -226,6 +235,7 @@
 .product__heading{
     font-size: 2.5rem;
     margin:  22px 0;
+    height: 110px;
 }
 .product__info{
     display: flex;
@@ -282,9 +292,9 @@ input[type=number]::-webkit-outer-spin-button {
 .menu__add-to-cart{
     margin-top: 3rem;
     font-size: 2.5rem;
-    width: 205px;
-    height: 56px;
-    
+    padding: 14px 38px;
+    width: 80%;
+    margin-bottom: 48px;
 }
 
 
@@ -295,6 +305,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: linear-gradient(to right, #FF96CF 0%, #FFEBCF 100%);
     position: relative;
     display: flex;
+    flex-direction: column;
     margin-top: 117px;
     z-index: 1;
 
@@ -319,18 +330,21 @@ input[type=number]::-webkit-outer-spin-button {
     
 }
 .combo__info{
-    width: 45%;
+  
     text-align: left;
-    margin: 3.7rem 0;
-    margin-left: 3.8rem;
+    padding: 3.7rem;
 }
 .combo__heading{
     font-size: 5rem;
     margin: 0;
+    width: 50%;
+    line-height: 5rem;
+    
 }
 
 .combo__sub{
     font-size: 2rem;
+    width: 50%;
     
 }
 
@@ -340,17 +354,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 .combo__add-to-cart{
-    width: 205px;
-    height: 56px;
     font-size: 2.5rem;
     margin-top: 31px;
-    background-color: white;
-    color: #EB6FB2;
+    background-color: white !important; 
+    color: #EB6FB2 !important; 
+    padding: 14px 38px;
 }
-.menu_sale{
-    display: flex;
-    width: 50%;
-    
+.combo__add-to-cart:hover{
+    color: white !important;
+}
+
+.wrapper__sale{
+    width: 47%;
+    display: inline-block;
+    float: right;
 }
 
 /* menu_sale{ */
@@ -364,6 +381,7 @@ input[type=number]::-webkit-outer-spin-button {
     transform: rotate(-30.59deg);
     top: 35px;
     right: 466px;
+    display: inline-block;
 }
 .sale__arrow{
     position: absolute;
@@ -372,10 +390,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .sale__img{
     position: absolute;
-    width: 332px;
-    height: 256px;
-    bottom: 32px;
-    right: 105px;
+    bottom: 63px;
+    right: 103px;
     
 }
 .sale__star{
@@ -435,13 +451,12 @@ input[type=number]::-webkit-outer-spin-button {
 .email__input::placeholder{
     color: #000000;
     opacity: 0.7;
-}
+}   
 
 .email__button{
     font-size: 2.5rem;
-    width: 185px;
-    height: 64px; 
     font-weight: 600;
+    padding: 16px 35px;
 }
 
 /* Footer */

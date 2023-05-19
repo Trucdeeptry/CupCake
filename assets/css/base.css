@@ -11,7 +11,6 @@
         url('../fonts/stangith.woff') format('woff'),
         url('../fonts/stangith.ttf') format('truetype'),
         url('../fonts/stangith.svg#stangith') format('svg');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -24,7 +23,6 @@
         url('../fonts/SofiaProLight.woff') format('woff'),
         url('../fonts/SofiaProLight.ttf') format('truetype'),
         url('../fonts/SofiaProLight.svg#SofiaProLight') format('svg');
-    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -37,7 +35,6 @@
         url('../fonts/Sriracha-Regular.woff') format('woff'),
         url('../fonts/Sriracha-Regular.ttf') format('truetype'),
         url('../fonts/Sriracha-Regular.svg#Sriracha-Regular') format('svg');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -48,11 +45,15 @@ html{
     font-family: 'Sofia Pro', sans-serif;
     box-sizing: border-box;
     line-height: 3.3rem;
+    font-weight: 500;
 }
 
 h1,h2,h3{
     font-family: 'Stangith', sans-serif;
     font-weight: 300;
+}
+p{
+    font-weight: 600;
 }
 h1{
     font-size: 10rem;
@@ -71,6 +72,7 @@ a{
     border: none;
     font-size: 2.5rem;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .btn:hover{
@@ -176,26 +178,34 @@ a{
         position: relative;
     }
     .content_img{
-        position: absolute;
-        height: 100vw;
-        top: calc(100vw - 210px);
-    }
-    .wrapper__sub{
-        margin-top: calc(100vw + 170px);
+        width: 50%;
     }
     .content_text-wrapper{
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .heading_text{
         position: relative;
         font-size: 7rem;
         text-align: center;
     }
+    .content_heading{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content_heading h1 {
+        font-size: 7rem;
+        margin-bottom: 0;
+    }
+    .content_sub{
+        font-size: 2rem;
+    }
     .heading_text-cupcake{
-        position: absolute;
+        
         line-height: 9rem;
-        bottom: -130px;
-        left: 55px;
+        
     }
     .content_order{
         flex-direction: column;
@@ -221,9 +231,12 @@ a{
     }
    .grid__column-5-event{
     margin-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    }
    .event__item{
-    width: 100%;
+    
    }
    .event__arrow{
     margin-left: 0;
@@ -238,11 +251,10 @@ a{
     }
     .menu__product{
         width: 100%;
-        height: 400px;
         
     }
     .menu__add-to-cart{
-        width: 130px;
+   
         font-size: 2rem;
     }
     .product__img{
@@ -255,13 +267,7 @@ a{
     .menu_heading{
         line-height: 6rem;
     }
-    .sale__img{
-        position: absolute;
-        width: 261px;
-        height: 256px;
-        bottom: -53px;
-        right: 44px;
-    }
+   
     
     
     .menu_sale{
@@ -270,20 +276,14 @@ a{
         left: 349px;
         width: 0;
     }
-    .sale__star{
-        position: absolute;
-        top: -230px;
-        right: 22px;
-        width: 51px;
-    }
     
-    .sale__arrow{
-        display: none;
-    }
+    
+    
     .sale__text{
         font-size: 2.6rem;
-        top: -235px;
-        right: 273px;
+        top: 16px;
+        right: 210px;
+        left: 0;
     }
     
     .combo__info{
@@ -292,9 +292,36 @@ a{
     }
     .combo__heading{
         line-height: 5rem;
+        width: 100%;
+        text-align: center;
+
+    }
+    .wrapper__sale{
+        height: 400px;
+        width: 100%;
+        float: inherit;
+        position: relative;
+        zoom: 0.7;
+    }
+    .sale__img{
+        position: absolute;
+        left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+    }
+    .sale__arrow{
+        display: none;
+    }
+    .sale__star{
+        position: absolute;
+        right: -30px;
+        top: 64px;
+        width: 60px;
+        
     }
     .combo__sub{
-        margin-top: 300px;
+      
+        width: 100%;
     }
 
     /* Clients */
@@ -352,7 +379,7 @@ a{
 {
     #body{
         zoom: 0.52;
-        height: calc((100vh * 4.78));
+        height: calc((100vh * 5));
      }
      
 }
@@ -360,7 +387,7 @@ a{
 {
     #body{
         zoom: 0.52;
-        height: calc((100vh * 5.24));
+        height: calc((100vh * 5.4));
      }
     
 }
@@ -368,17 +395,35 @@ a{
 {
     #body{
         zoom: 0.52;
-        height: calc((100vh * 5.75));
+        height: calc((100vh * 6));
      }
     
 }
 
 
 
-/* PC */
-@media (min-width: 1024px) and (max-width: 1400px) {
+/* FIX PC */
+@media (min-width: 1012px) and (max-width: 1315px) {
 
-
+        .content_heading h1 {
+            font-size: 7rem;
+            margin-bottom: 0;
+        }
+        .content_sub{
+            font-size: 2rem;
+        }
+        .product__heading{
+            font-size: 2.2rem;
+        }
+        .wrapper__sale{
+            zoom: 0.8;
+        }
+        .sale__img{
+         
+            bottom: 118px;
+         
+            
+        }
 }
 
 
