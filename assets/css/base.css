@@ -4,18 +4,45 @@
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('fonts/sofiapro.otf') format('truetype');
-  }
-  
-@font-face {
     font-family: 'Stangith';
-    src: url('fonts/stangith.ttf') format('truetype');
-  }
-@font-face{
-    font-family: 'Sriracha';
-    src: url('../fonts/Sriracha-Regular.ttf') format('truetype');
+    src: url('../fonts/stangith.eot');
+    src: url('../fonts/stangith.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/stangith.woff2') format('woff2'),
+        url('../fonts/stangith.woff') format('woff'),
+        url('../fonts/stangith.ttf') format('truetype'),
+        url('../fonts/stangith.svg#stangith') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaProLight.eot');
+    src: url('../fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaProLight.woff2') format('woff2'),
+        url('../fonts/SofiaProLight.woff') format('woff'),
+        url('../fonts/SofiaProLight.ttf') format('truetype'),
+        url('../fonts/SofiaProLight.svg#SofiaProLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../fonts/Sriracha-Regular.eot');
+    src: url('../fonts/Sriracha-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sriracha-Regular.woff2') format('woff2'),
+        url('../fonts/Sriracha-Regular.woff') format('woff'),
+        url('../fonts/Sriracha-Regular.ttf') format('truetype'),
+        url('../fonts/Sriracha-Regular.svg#Sriracha-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html{
     font-size: 62.5%;
     font-family: 'Sofia Pro', sans-serif;
