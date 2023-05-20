@@ -234,7 +234,8 @@
 }
 .product__heading{
     font-size: 2.5rem;
-    margin:  22px 0;
+    padding: 0 30px;
+    margin: 0;
     height: 110px;
 }
 .product__info{
@@ -292,7 +293,7 @@ input[type=number]::-webkit-outer-spin-button {
 .menu__add-to-cart{
     margin-top: 3rem;
     font-size: 2.5rem;
-    padding: 14px 38px;
+    padding: 14px 0;
     width: 80%;
     margin-bottom: 48px;
 }

@@ -170,6 +170,7 @@ a{
         position: absolute;
         left: 0;
         top: 40px;
+        margin-left: 0;
     }
 
     /* Main content */
@@ -203,7 +204,7 @@ a{
         font-size: 2rem;
     }
     .heading_text-cupcake{
-        
+        margin: 0;
         line-height: 9rem;
         
     }
@@ -217,7 +218,7 @@ a{
     }
 
     .info__price{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     /* Events */
 
@@ -255,7 +256,7 @@ a{
     }
     .menu__add-to-cart{
    
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .product__img{
         width: 120px;
