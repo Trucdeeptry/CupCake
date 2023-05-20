@@ -85,7 +85,7 @@
 
 /* main content */
 
-.main_content{
+#main_content{
     display: flex;
 }
 .content_text-wrapper{
@@ -148,7 +148,7 @@
 
 /* Event */
 
-.event{
+#event{
     border-bottom: 2px solid black;
     text-align: center;
     display: flex;
@@ -462,7 +462,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Footer */
 
-.footer{
+#footer{
     background-color: black;
     color: white;
 }

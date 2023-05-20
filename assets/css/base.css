@@ -174,7 +174,7 @@ a{
     }
 
     /* Main content */
-    .main_content{
+    #main_content{
         flex-direction: column;
         position: relative;
     }
@@ -338,7 +338,7 @@ a{
 
     /* Footer */
 
-    .footer{
+    #footer{
         height: 100vh;
     }
     .grid__column-4{
