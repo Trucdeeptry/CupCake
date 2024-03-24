@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <meta name="google-signin-client_id" content="343843909589-d7re2d6muq945af426ahrfla5p9bhdfe.apps.googleusercontent.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/AVTTanTruc.jpg">
+</head>
+<body>
+    <id class="main">
+        <div class="container">
+            
+            </id>
+            <id class="header">
+                <img src="./assets/img/Vector.png" alt="" class="header_logo">
+                <div class="header_language">
+                    <p class="header_language-text">English (UK)</p>
+                    <i class="fa-sharp fa-solid fa-caret-down header_language-menu"></i>
+                    <div class="language_choose">
+                        <a href="" class="language-text">Việt Nam</a>
+                        <a href="" class="language-text">China</a>
+                        <a href="" class="language-text">Thailand</a>
+                        
+                    </div>
+                </div>
+                
+            </id>
+            <id class="content">
+                <div class="content_main">
+                    <div class="content_main-wrapper">
+                        <h1 class="content_title">Create Account</h1>
+                        <div class="content_sign-in">
+                            <a href="" class="sign-in-wrapper">
+                                <div  id="google-button">
+                                </div>
+                            </a>
+                            
+                            
+                        </div>
+                        <p class="content-or">- OR -</p>
+                        <ul class="content_info">
+                            <li class="info_list">
+                                <input type="text" class="info_name"  required>
+                                <p class="info_placeholder">Full Name</p>
+                            </li>
+                            <li class="info_list">
+                                <input type="text" class="info_name" required >
+                                <p class="info_placeholder">Email Address</p>
+                            </li>
+                            <li class="info_list">
+                                <input type="password" id="password" class="info_name" required>
+                                <p class="info_placeholder">Password</p>
+                                <img src="./assets/img/blindsvg.svg" alt="" class="password-blind">
+                            </li>
+                        </ul>
+                        <a href="" class="create-wrapper">
+                            <button class="content_action-create">Create Account</button>
+                        </a>
+                        <p class="content_have-account">
+                            Allready have an account?
+                             <a href="">Log in</a>
+                            </p>
+                    </div>
+                </div>
+                <div class="content_sup">
+                    <div class="content_sup-info">
+                        <h2 class="content_sub-text">Website built by Phan Tan Truc. Hope you enjoy it</h2>
+                    </div>
+                    <img src="./assets/img/Abstraction.png" alt="" class="content_img">
+
+                </div>
+
+        </div>
+    
+    </id>
+
+
+
+
+<div id="google-button" ></div>
+    <div class="container" style="display: none;">
+        <img src="" alt="profile" class="img">
+        <div class="name"></div>
+        <br>
+        <lable>ID: </lable>
+        <div class="id"></div>
+        <br>
+        <lable>Email: </lable>
+        <div class="email"></div>
+        <button onClick="signOut()">Sign Out</button>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-container close-modal">
+        <div class="modal" >
+            <h3 style="text-align: center;">Thông Báo !</h3>
+            <p class="modal-details" style="text-align: center;margin-top: 70px;">Không thể số âm</p>
+            <button class="btn btn-modal">Close</button>
+        </div>
+    </div>
+   <script>
+    var modal_container = document.querySelector('.modal-container');
+    var btn_modal = document.querySelector('.btn-modal');
+    btn_modal.addEventListener('click', function(){
+        modal_container.classList.add('close-modal');
+    })
+   </script>
+    <style>
+        .modal-container{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: hsla(0, 0%, 40%, .6);
+            z-index: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .modal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed; 
+            background-color: white;
+            width: 700px; 
+            height: 450px; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px; border-radius: 20px;
+            z-index: 10;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .btn-modal{
+            width: 300px;
+            height: 80px;
+            border-radius: 20px;
+            margin-top: 50px;
+            
+        }
+        .open-modal{
+            display: block;
+        }
+      
+        .close-modal{
+            display: none;
+        }
+    </style>
+
+
+
+<script src="./main.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
+</body>
+</html>

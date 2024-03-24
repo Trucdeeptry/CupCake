@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: font_strong;
+}
+
+
+@font-face {
+    font-family:font_strong;
+    src:url('../font/PPTelegraf-Regular.otf');
+    font-weight:normal;
+    font-style:normal;
+   }
+
+   /* mobile */
+   @media (max-width: 739px){ 
+    .container{
+        height: 570px;
+    }
+    .content_sup{
+        display: block;
+        height: 500px;
+        width: 100vw;
+        margin: auto; 
+        z-index: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content_img{
+        margin-left: 0;
+        width: 350px;
+    }
+    .content_title{
+        text-align: center;
+    }
+    .header{
+        align-items: center;
+    }
+    .header_language{
+       
+        color: white;
+    }
+    .content_main{
+        margin-top: 550px;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .content_img{
+        margin: 0;
+        display: inline-block;
+
+    }
+    .content_sub-text{
+        margin: 0 25px;
+    }
+   .content_sign-in{
+       display: block;
+       width: calc(100vw - 50px);
+      
+       
+    }
+    .sign-in-wrapper{
+       display: flex;
+       justify-content: center;
+       margin-right: 0px;
+    }
+    .content_main-wrapper{
+       
+        width: calc(100vw - 50px);
+    }
+    .sign-in-with {
+        
+        margin-bottom: 20px;
+        
+        
+    }
+    .content_main-wrapper{
+        margin: 0 25px;
+    }
+    .content_action-create{
+        width: calc(100vw - 50px);
+    }
+   }
+   
+    /* tablet */
+   @media (min-width: 740px ) and (max-width:1023px){
+    .container{
+        height: 1000px;
+    }
+    .content_sup{
+        display: inline-block;
+        height: 550px;
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 25px; 
+        text-align: center;
+    }
+    .content_sub-text{
+        text-align: center;
+    }
+    .content_img{
+        margin: 0;
+        display: inline-block;
+
+    }
+    
+    .header{
+       
+        align-items: center;
+    }
+    .header_language{
+        margin-right: 25px;
+        color: white;
+    }
+    .content_main{
+        margin-top: 700px;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+   }
+   /* FIX PC */
+   @media (min-width: 1024px) and (max-width: 1400px) {
+    .container{
+        height: 1000px;
+    }
+    .content_sup{
+        display: block;
+        height: 550px;
+        width: 550px;
+        margin: auto; 
+        margin-top: 50px;  
+        
+    }
+    .content_img{
+        margin: 0;
+
+    }
+    
+    .header{
+       
+        align-items: center;
+    }
+    .header_language{
+        margin-right: 25px;
+        color: white;
+    }
+    .content_main{
+        margin-top: 700px;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+   }
