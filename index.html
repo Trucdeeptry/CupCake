@@ -453,7 +453,9 @@
         <div class="modal-container close-modal ">
             <div class="modal" >
                 <h3 style="text-align: center;">Notification !</h3>
-                <p class="modal-details" >Không thể số âm</p>
+                <div class="container_modal-details">
+                    <p class="modal-details" >Không thể số âm</p>
+                </div>
                 <button class="btn btn-modal">Close</button>
             </div>
         </div>
@@ -492,9 +494,17 @@
             z-index: 10;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
+        .container_modal-details{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-30%);
+        }
         .modal-details{
             text-align: center;
-            margin-top: 30px;
+            
         }
         .btn-modal{
             position: absolute;
