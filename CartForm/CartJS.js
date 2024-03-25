@@ -115,6 +115,7 @@ function clearEmptytr(){
 }
 
 clearEmptytr();
+
 //Gửi mail
 function sendingEmail(){
     var date = new Date();
@@ -122,7 +123,10 @@ function sendingEmail(){
     date.setDate(date.getDate() + 3)
     var fureDate = date.getDate() +'-'+(date.getMonth()+1)+'-'+date.getFullYear();
     var UserEmail = sessionStorage.getItem('GGemail');
-    if(UserEmail != null){
+    var gioHangData = document.querySelectorAll('#CupCakeTable tbody tr');
+    
+
+    if(UserEmail != null && gioHangData.length > 0){
         var gioHangData = document.querySelectorAll('#CupCakeTable tbody tr');
         var KhoAnh = ['Combo cupcake.png', 'Cupcake (1).png', 'Cupcake (2).png', 'Cupcake (3).png', 'Cupcake (4).png', 'Cupcake (5).png', 'Cupcake (6).png', 'Cupcake (7).png', 'Cupcake (8).png']
         var LinkAnh = ["bit.ly/cupcakeCombo", "bit.ly/cupcake1TT", "bit.ly/cupcake2TT", "bit.ly/cupcake3TT", "bit.ly/cupcake4TT", "bit.ly/cupcake5TT", "bit.ly/cupcake6TT", "bit.ly/cupcake7TT", "bit.ly/cupcake8TT"];
@@ -173,7 +177,8 @@ function sendingEmail(){
             message => {
                 alertModal(message);
                 if(message == "OK"){
-                    alertModal("Check your gmail!");
+                    alertModal(`Check your gmail!
+                    <br>    maybe in spam`);
                 }else{
                     alertModal("Oder Failed!")
                 }
@@ -191,16 +196,19 @@ function sendingEmail(){
              clearProduct();
         })
     }
-       
     
- 
+    if(gioHangData.length <= 0){
+        alertModal("Add Cupcake frist!");
+    }
+    
+    
 }
 function alertModal(Details){
     var modal_container = document.querySelector('.modal-container');
     var details = document.querySelector('.modal-details');
     modal_container.classList.remove('close-modal');
     modal_container.classList.add('open-modal');
-    details.textContent = Details;
+    details.innerHTML = Details;
 }
 
 

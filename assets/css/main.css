@@ -517,8 +517,3 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     text-decoration: underline;
 }
-.user-profile{
-    border-radius: 30px;
-    width: 50px;
-    margin-left: 55px;
-}
