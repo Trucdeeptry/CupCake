@@ -173,7 +173,7 @@ function sendingEmail(){
             message => {
                 alertModal(message);
                 if(message == "OK"){
-                    alertModal("Check your gmail!");
+                    alertModal(`Check your gmail!<br>maybe in spam`);
                 }else{
                     alertModal("Oder Failed!")
                 }
