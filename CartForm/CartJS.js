@@ -209,6 +209,7 @@ function alertModal(Details){
     modal_container.classList.remove('close-modal');
     modal_container.classList.add('open-modal');
     details.innerHTML = Details;
+    details.innerHTML = Details;
 }
 
 
