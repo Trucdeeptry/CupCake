@@ -412,9 +412,7 @@ input[type=number]::-webkit-outer-spin-button {
 .clients__heading{
     margin-bottom: 100px;
 }
-.clients__logo{
-   
-}
+
 .clients__logo-item{
     margin-bottom: 79px;
     
@@ -469,18 +467,12 @@ input[type=number]::-webkit-outer-spin-button {
 .footer__wrapper{
     padding: 54px 64px 0px 75px;
 }
-.footer__logo{
-   
-}
+
 .footer__slogan{
     font-size: 2rem;
 }
 
-.footer__link{
-    
 
-
-}
 .footer__link-items{
     list-style: none;
     margin-bottom: 14px;
