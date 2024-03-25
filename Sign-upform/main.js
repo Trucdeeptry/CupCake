@@ -43,7 +43,7 @@ function handleCredentialResponse(response) {
     googleButton.style.display = 'none'
     isLoggedIn = true;
     SetSession();
-    window.location.href = "/index.html"
+    window.location.href = "../index.html"
 }
 
 window.onload = function () {
