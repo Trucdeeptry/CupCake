@@ -26,8 +26,9 @@
     @font-face {
       font-family: 'Stangith';
       src: url('../assets/fonts/stangith.eot');
+      
       src: url('../assets/fonts/?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/fonts/stangith.woff2') format('woff2'),
+        url('../assets/fonts/stangith.woff2') format('woff2'),
         url('../assets/fonts/fonts/stangith.woff') format('woff'),
         url('../assets/fonts/fonts/stangith.ttf') format('truetype'),
         url('../assets/fonts/fonts/stangith.svg#stangith') format('svg');
@@ -250,6 +251,12 @@
       height: 15%;
       border-radius: 20px;
       margin-top: 30px;
+       color: white;
+      background-color: black;
+      border: none;
+      font-size: 2.5rem;
+      cursor: pointer;
+      font-weight: 700;
     }
 
     .open-modal {
@@ -261,10 +268,15 @@
 
     }
 
+    .btn-modal:hover {
+      color: black;
+      background: linear-gradient(to left, #F9D6A6 0%, #F387C1 100%);
+    }
+
     @media(max-width: 739px) {
       .modal {
         width: 80%;
-        height: 50%;
+        height: 40%;
       }
 
       .modal-details {
@@ -274,6 +286,7 @@
 
       .btn-modal {
         margin-top: 0px;
+        font-size: 15px;
       }
     }
   </style>

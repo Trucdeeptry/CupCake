@@ -198,7 +198,7 @@ function sendingEmail(){
     }
     
     if(gioHangData.length <= 0){
-        alertModal("Add Cupcake frist!");
+        alertModal("Add Cupcake first!");
     }
     
     
