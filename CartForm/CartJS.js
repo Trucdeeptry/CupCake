@@ -200,7 +200,7 @@ function alertModal(Details){
     var details = document.querySelector('.modal-details');
     modal_container.classList.remove('close-modal');
     modal_container.classList.add('open-modal');
-    details.textContent = Details;
+    details.innerHTML = Details;
 }
 
 
