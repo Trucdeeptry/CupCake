@@ -37,7 +37,7 @@
 
     @font-face {
       font-family: 'Sofia Pro';
-      
+
       src: url('../assets/fonts/fonts/SofiaProLight.eot');
       src: url('../assets/fonts/fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
         url('../assets/fonts/fonts/SofiaProLight.woff2') format('woff2'),
@@ -193,10 +193,10 @@
 
 
   <!-- modal -->
-  <div class="modal-container close-modal">
+  <div class="modal-container close-modal ">
     <div class="modal">
-      <h3 style="text-align: center; font-size: 30px; margin-top: 50px;">Notification !</h3>
-      <p class="modal-details" style="text-align: center;margin-top: 70px;"></p>
+      <h3 style="text-align: center;">Notification !</h3>
+      <p class="modal-details">Không thể số âm</p>
       <button class="btn btn-modal">Close</button>
     </div>
   </div>
@@ -218,44 +218,38 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: 'Stangith', sans-serif;
-      font-weight: 300;
     }
 
     .modal {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       position: fixed;
       background-color: white;
-      width: 700px;
-      height: 450px;
+      width: 50%;
+      height: 70%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 30px;
       border-radius: 20px;
-      z-index: 1;
+      z-index: 10;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .btn-modal {
-      width: 300px;
-      height: 80px;
-      border-radius: 20px;
-      margin-top: 50px;
-      color: white;
-      background-color: black;
-      border: none;
-      font-size: 30px;
-      cursor: pointer;
-      font-weight: 700;
+    .modal-details {
+      text-align: center;
+      margin-top: 30px;
     }
 
-    .btn-modal:hover {
-      color: black;
-      background: linear-gradient(to left, #F9D6A6 0%, #F387C1 100%);
-
+    .btn-modal {
+      position: absolute;
+      bottom: 20px;
+      width: 70%;
+      height: 15%;
+      border-radius: 20px;
+      margin-top: 30px;
     }
 
     .open-modal {
@@ -264,6 +258,23 @@
 
     .close-modal {
       display: none;
+
+    }
+
+    @media(max-width: 739px) {
+      .modal {
+        width: 80%;
+        height: 50%;
+      }
+
+      .modal-details {
+        font-size: 20px;
+        margin-top: 0px;
+      }
+
+      .btn-modal {
+        margin-top: 0px;
+      }
     }
   </style>
   <!-- Liên kết với jQuery -->
