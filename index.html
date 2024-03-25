@@ -52,7 +52,7 @@
                             <img src="./assets/img/Profile.png" alt="" class="navbar_user-profile">
                         </a>
                         <a href="#" onclick="alertInfoGG()" class="navbar_user-link link-user">
-                            <img src="" alt=""  id="user-avt" class="navbar_user-profile" style="height: 50px;border-radius: 30px; margin-left: 55px;" >
+                            <img src="" alt=""  id="user-avt" class="navbar_user-profile" style="height: 50px;border-radius: 30px; " >
                         </a>
                     </div>
                 </div>
@@ -453,7 +453,7 @@
         <div class="modal-container close-modal ">
             <div class="modal" >
                 <h3 style="text-align: center;">Notification !</h3>
-                <p class="modal-details" style="text-align: center;margin-top: 30px;">Không thể số âm</p>
+                <p class="modal-details" >Không thể số âm</p>
                 <button class="btn btn-modal">Close</button>
             </div>
         </div>
@@ -491,13 +491,15 @@
             z-index: 10;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        
+        .modal-details{
+            text-align: center;
+            margin-top: 30px;
+        }
         .btn-modal{
             width: 70%;
             height: 15%;
             border-radius: 20px;
             margin-top: 30px;
-            
         }
         .open-modal{
             display: block;
@@ -507,6 +509,21 @@
             display: none;
            
         }
+        @media(max-width: 739px){
+            .modal{
+                width: 80%; 
+                height: 50%; 
+            }
+            .modal-details{
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            .btn-modal{
+                 margin-top: 0px;
+            }
+        }
+        
+        
     </style>
     
     <script src="./main.js"></script>

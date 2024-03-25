@@ -170,7 +170,10 @@ a{
         position: absolute;
         left: 0;
         top: 40px;
-        margin-left: 0;
+        margin-left: 0;        
+    }
+    .link-user{
+        margin-left: 55px;
     }
 
     /* Main content */
