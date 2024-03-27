@@ -167,9 +167,7 @@
     margin-bottom: 84px;
     
 }
-.event__product{
-   margin: 0 2rem;
-}
+
 .event__item-img{
     width: 100%;
 }
@@ -509,3 +507,28 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;
     text-decoration: underline;
 }
+.event-slider{
+    width: 80%;
+    flex-wrap: initial !important;
+    overflow: hidden;
+}
+.event__product{
+    margin: 0 2rem;
+    display: flex;
+    
+
+ 
+ }
+ .grid__column-slider{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+    flex-shrink: 0;
+    padding: 20px;
+    transition: ease 0.5s;
+    
+   
+ }
+ .event__arrow-reverse{
+    display: none;
+ }
